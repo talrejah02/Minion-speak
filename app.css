@@ -12,6 +12,7 @@ textarea {
   width: 60%;
   padding: 1rem;
   margin: 1rem;
+  text-align: center;
 }
  #btn-translate{
    border: none;

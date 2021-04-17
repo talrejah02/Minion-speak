@@ -2,12 +2,14 @@ var  btnTranslate = document.querySelector("#btn-translate");
 var txtInput= document.querySelector("#txt-input");
 var outputDiv = document.querySelector("#output");
 
+
+
 var url = "https://api.funtranslations.com/translate/minion.json"
 function gettranslated(text){
   return url + "?" +"text=" + text
 }
 function errorhandler(){
-  console.log("soryy")
+ alert("max limit reached")
 }
 function clickhandler(){
   var inputxt = txtInput.value
@@ -20,3 +22,5 @@ function clickhandler(){
   .catch(errorhandler)
 };
 btnTranslate.addEventListener("click", clickhandler)
+
+
